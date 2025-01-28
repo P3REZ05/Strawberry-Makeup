@@ -1,5 +1,3 @@
-
-
 :root{
   --primary: #ff69b4ff;
   --info: #ff85c1ff;
@@ -8,6 +6,8 @@
   --dark: #000000; 
   --secondary: #ffffff;
 }
+
+
 
 .hero {
   background-image: url('url_de_fondo');
