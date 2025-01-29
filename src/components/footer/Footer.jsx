@@ -4,13 +4,13 @@ const Footer = () => {
     return (
         <footer className="bg-dark text-white text-center py-4">
             <div className="container">
-                <p className="mb-2">&copy; 2023 Mi Tienda. Todos los derechos reservados.</p>
+                <p className="mb-2">&copy; 2024 Strawberry-Makeup. Todos los derechos reservados.</p>
                 <div className="d-flex justify-content-center">
                     <a href="#" className="text-white mx-3">
                         <i className="bi bi-facebook"></i> Facebook
                     </a>
                     <a href="#" className="text-white mx-3">
-                        <i className="bi bi-twitter"></i> Twitter
+                        <i className="bi bi-tiktok"></i> TikTok
                     </a>
                     <a href="#" className="text-white mx-3">
                         <i className="bi bi-instagram"></i> Instagram

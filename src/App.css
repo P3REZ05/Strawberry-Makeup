@@ -1,3 +1,5 @@
+
+/* PALETA DE COLORES DE LA PAGINA MODIFICADA */
 :root{
   --primary: #ff69b4ff;
   --info: #ff85c1ff;
@@ -5,12 +7,53 @@
   --grey: #efb2d7ff;
   --dark: #000000; 
   --secondary: #ffffff;
+  --success: #ffc1cc;
+}
+
+/* VARIABLES DE LOS COLORES DE LA PAGINA */
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-info {
+  background-color: var(--info);
+}
+.bg-grey {
+  background-color: var(--grey);
+}
+.bg-ligth {
+  background-color: var(--ligth);
+}
+.bg-dark {
+  background-color: var(--dark);
+}
+.bg-secondary {
+  background-color: var(--secondary);
+}
+.bg-success {
+  background-color: var(--success);
 }
 
 
+/* TAMAÑO DE LAS IMAGENES DEL CARRUSEL */
+.carousel-inner img {
+  max-height: 400px;
+  max-width: 400px; 
+}
 
-.hero {
-  background-image: url('url_de_fondo');
-  background-size: cover;
-  color: white;
+
+/* TAMAÑOS DE PANTALLA (RESPONSI) */
+@media (min-width: 768px) {
+  .container-fluid {
+      max-width: 720px; 
+  }
+}
+@media (min-width: 992px) {
+  .container-fluid {
+      max-width: 960px; 
+  }
+}
+@media (min-width: 1200px) {
+  .container-fluid {
+      max-width: 1140px; /* Ajusta este valor según tus necesidades */
+  }
 }
