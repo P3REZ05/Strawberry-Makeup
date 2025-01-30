@@ -6,8 +6,8 @@ import imagen3 from '../../assets/example/imagen3.png';
 
 const Hero = () => {
     return (
-        <div className='container-fluid px-5'>
-            <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel" data-bs-interval="80000">
+        <div className='contenido-carrusel'>
+            <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img src={imagen1} className="d-block w-100" alt="imagen 1" />

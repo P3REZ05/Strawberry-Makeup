@@ -37,8 +37,16 @@
 /* TAMAÑO DE LAS IMAGENES DEL CARRUSEL */
 .carousel-inner img {
   max-height: 400px;
-  max-width: 400px; 
+  max-width: 500px; 
 }
+
+/*CENTRADO DEL CARRUSEL CON LA PANTALLA MAS PEQUEÑA*/
+@media (max-width: 450px) {
+  .carousel {
+      margin: 0 auto;
+  }
+}
+
 
 
 /* TAMAÑOS DE PANTALLA (RESPONSI) */
@@ -54,6 +62,14 @@
 }
 @media (min-width: 1200px) {
   .container-fluid {
-      max-width: 1140px; /* Ajusta este valor según tus necesidades */
+      max-width: 1140px; 
+  }
+
+.contenido-carrusel {
+    max-width: 450px; 
+    margin: 0 auto;
+    padding: 0 15px;
   }
 }
+
+

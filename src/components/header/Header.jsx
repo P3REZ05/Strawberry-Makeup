@@ -5,11 +5,11 @@ import logo from '../../assets/logo/strawberrymakeup.png';
 
 const Header = () => {
     return (
-        <header className="py-2" style={{ backgroundColor: 'var(--success)' }}>
+        <header className="py-2 border-bottom" style={{ backgroundColor: 'var(--success)' }}>
             <nav className="navbar navbar-expand-lg "></nav>
-                <div class="container">
-                    <a class="navbar-brand " href="#">
-                        <img src={logo} alt="Logo" style={{ height: '90px' }} />
+                <div className="container">
+                    <a className="navbar-brand " href="#">
+                        <img src={logo}  alt="Logo" style={{ height: '80px' }} />
                     </a>
                 </div>
         </header>
