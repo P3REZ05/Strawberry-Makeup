@@ -3,12 +3,14 @@ import ProductCard from './ProductCard';
 
 const ProductList = ({ products }) => {
     return (
-        <div className="row">
-            {products.map((product) => (
-                <div className="col-md-4" key={product.id}>
-                    <ProductCard product={product} />
-                </div>
-            ))}
+        <div className="container">
+            <div className="row">
+                {products.map((product) => (
+                    <div className="col-md-4" key={product.id}>
+                        <ProductCard product={product} />
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };
