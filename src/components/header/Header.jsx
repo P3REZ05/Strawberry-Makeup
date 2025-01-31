@@ -24,16 +24,21 @@ const Header = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto ">
+            <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link bi-house-fill fw-bold">Home</Link>
+                <Link className="nav-link bi-house-fill fw-bold"> Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link logotik bi-cart3 fw-bold">Shop</Link>
+                <Link className="nav-link logotik bi-cart3 fw-bold"> Shop</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link bi-telephone-fill fw-bold">Contact</Link>
+                <Link className="nav-link bi-telephone-fill fw-bold"> Contact</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link bi-sliders fw-bold"> Categories</Link>
+              </li>
+              </ul>
+              <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link className="nav-link bi-person-fill fs-1"></Link>
               </li>

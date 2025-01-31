@@ -33,6 +33,10 @@
   background-color: var(--success);
 }
 
+/*ICONOS DE EL HERA SECCION (REDES SOCIALES)*/
+.bihero {
+  color: var(--primary);
+}
 
 .hero-section {
   background-color: #f8e8e8;
@@ -76,6 +80,7 @@
       max-width: 1140px; 
   }
 
+  /* TAMAÑO DE LAS IMAGENES DEL CARRUSEL */
 .contenido-carrusel {
     max-width: 450px; 
     margin: 0 auto;
@@ -83,12 +88,14 @@
   }
 }
 
-/* */
+
+/* MOVER EL LOGO DE DERECHA A IZQUIERDA*/
 .navbar-brand {
-  margin-left: 5rem;
-  margin-top: 1rem;
+  margin-left: 3rem;
+  margin-top: 0rem;
 }
 
+/* TAMAÑO DE EL NAVBAR DEL NAVBAR */
 .nav-link {
   font-weight: 500;
   margin-top: 1rem;
