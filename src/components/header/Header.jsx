@@ -12,6 +12,7 @@ const Header = () => {
             <img src={logo} alt="Logo" className='mt-' style={{ height: '80px' }} />
           </Link>
           
+          {/* BOTON RESPONSI EN PANTALLA DE MOVILES */}
           <button
             className="navbar-toggler"
             type="button"
@@ -23,24 +24,49 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+
+          {/* Menú de navegación */}
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
+            <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <Link className="nav-link bi-house-fill fw-bold"> Home</Link>
+                <Link className="nav-link fw-bold" to="/">
+                  <i className="bi "></i> Home
+                </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link logotik bi-cart3 fw-bold"> Shop</Link>
+                <Link className="nav-link fw-bold" to="/shop">
+                  <i className="bi "></i> Shop
+                </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link bi-telephone-fill fw-bold"> Contact</Link>
+                <Link className="nav-link fw-bold" to="/contact">
+                  <i className="bi "></i> Contact
+                </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link bi-sliders fw-bold"> Categories</Link>
+                <Link className="nav-link fw-bold" to="/categories">
+                  <i className="bi "></i> Categories
+                </Link>
               </li>
-              </ul>
-              <ul className="navbar-nav ms-auto">
+            </ul>
+
+            {/* Iconos de usuario, búsqueda y carrito */}
+            <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link bi-person-fill fs-1"></Link>
+                <Link className="nav-link" to="/search">
+                  <i className="bi bi-search fs-5"></i>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/profile">
+                  <i className="bi bi-person-fill fs-5"></i>
+                </Link>
+              </li>
+              <li className="nav-item position-relative">
+                <Link className="nav-link" to="/cart">
+                  <i className="bi bi-cart-fill fs-5"></i>
+                  <span className="badge bg-danger position-absolute top-0 start-100 translate-middle">2</span>
+                </Link>
               </li>
             </ul>
           </div>

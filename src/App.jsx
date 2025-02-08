@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
-import Hero from './components/body-home/Hero';
-import Home from './pages/Home';
+import Hero from './components/home/Hero';
+import Hometext from './pages/Home';
 import Footer from './components/footer/Footer';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -15,9 +15,8 @@ const App = () => {
     return (
         <div>
             <Header />
-            <Hero />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<><Hero /> <Hometext /></>} />
             </Routes>
             <Footer />
         </div>

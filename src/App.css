@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-/* PALETA DE COLORES DE LA PAGINA MODIFICADA */
+
+/* PALETA DE COLORES DE LA PAGINA MODIFICADA Y FUENTES*/
 :root{
   --primary: #ff69b4ff;
   --info: #ff85c1ff;
@@ -8,7 +10,12 @@
   --dark: #000000; 
   --secondary: #ffffff;
   --success: #ffc1cc;
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
 }
+
+
+
 
 /* VARIABLES DE LOS COLORES DE LA PAGINA */
 .bg-primary {
@@ -33,15 +40,53 @@
   background-color: var(--success);
 }
 
+/* HOVER DE EL NAVBAR Y FUENTES */
+.navbar-nav .nav-link {
+  color: var(--dark);
+  font-family: var(--font-primary);
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary);
+}
+
+/*-------------------------------*/
+
+
+
+
 /*ICONOS DE EL HERA SECCION (REDES SOCIALES)*/
 .bihero {
   color: var(--primary);
 }
 
+/*-------------------------------------------*/
+
 .hero-section {
   background-color: #f8e8e8;
   text-align: center;
   padding: 3rem 1rem;
+  position: relative;
+}
+
+/* COMPONENTE HERO CON ESTILOS E IMPORTACION DEL FONDO CON SU CONTENEDOR */
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../frontend/src/assets/fondos/fondo.png'); /* Ruta a tu imagen PNG */
+  background-size: contain;
+  background-position: center;
+  opacity: 1; /* Ajusta la opacidad según sea necesario */
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-section img {
@@ -49,16 +94,19 @@
   height: auto;
 }
 
+/*-----------------------------------------------------------------*/
+
 /* TAMAÑO DE LAS IMAGENES DEL CARRUSEL */
 .carousel-inner img {
   max-height: 400px;
-  max-width: 500px; 
+  max-width: 800px; 
 }
 
 /*CENTRADO DEL CARRUSEL CON LA PANTALLA MAS PEQUEÑA*/
 @media (max-width: 450px) {
   .carousel {
       margin: 0 auto;
+      max-width: 100%;
   }
 }
 
@@ -79,14 +127,10 @@
   .container-fluid {
       max-width: 1140px; 
   }
-
-  /* TAMAÑO DE LAS IMAGENES DEL CARRUSEL */
-.contenido-carrusel {
-    max-width: 450px; 
-    margin: 0 auto;
-    padding: 0 15px;
-  }
 }
+
+/*---------------------------------------*/
+
 
 
 /* MOVER EL LOGO DE DERECHA A IZQUIERDA*/

@@ -1,10 +1,11 @@
 import React from 'react';
-import ProductContainer from '../components/productos/ProductContainer';
+import ProductContainer from '../components/home/HomeText';
+import Hometext from '../components/home/HomeText';
 
 const Home = () => {
     return (
         <div className="container">
-            <ProductContainer />
+            <Hometext />
         </div>
     );
 };
