@@ -43,10 +43,15 @@ const Header = () => {
                   <i className="bi "></i> Contact
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link fw-bold" to="/categories">
+              <li className="nav-item dropdown">
+                <Link className="nav-link fw-bold dropdown-toggle" to="/categories" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i className="bi "></i> Categories
                 </Link>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><Link className="dropdown-item" to="/categories/category1">Category 1</Link></li>
+                  <li><Link className="dropdown-item" to="/categories/category2">Category 2</Link></li>
+                  <li><Link className="dropdown-item" to="/categories/category3">Category 3</Link></li>
+                </ul>
               </li>
             </ul>
 
@@ -58,12 +63,12 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/profile">
+                <Link className="nav-link" to="/admin">
                   <i className="bi bi-person-fill fs-5"></i>
                 </Link>
               </li>
               <li className="nav-item position-relative">
-                <Link className="nav-link" to="/cart">
+                <Link className="nav-link" to="/shopcart">
                   <i className="bi bi-cart-fill fs-5"></i>
                   <span className="badge bg-danger position-absolute top-0 start-100 translate-middle">2</span>
                 </Link>

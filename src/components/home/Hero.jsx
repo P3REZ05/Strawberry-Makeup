@@ -7,14 +7,14 @@ import * as images from '../../assets/example/exportIMG.jsx';
 
 const Hero = () => {
     return (
-        <div className="hero-section">
-            <div className='overlay'></div>
-            <div className="container">
+        <div className="hero-section ">
+            <div className='overlay '></div>
+            <div className="container ">
                 <div className="row align-items-center">
-                    <div className="col-md-6">
+                    <div className="col-md-6 ">
                         <h1>Nuevas Tendencias a Diario</h1>
                         <p>Con hasta 60% de descuento</p>
-                        <a className="btn" style={{ backgroundColor: 'var(--success)' }}  href="#">Shop Now</a>
+                        <a className="btn botonhero" href="#">Shop Now</a>
                         <div className="mt-3">
                             <a className="me-2" href="#">
                                 <i className="bihero bi-facebook" ></i>

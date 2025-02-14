@@ -12,7 +12,10 @@
   --success: #ffc1cc;
   --font-primary: 'Roboto', sans-serif;
   --font-secondary: 'Open Sans', sans-serif;
+  --font-first: 'Harmonia Sans Pro Condensed Semi Bold', sans-serif;
+  --font-third: 'Ut Sa Ha Gumm Thai Regular', sans-serif;
 }
+/*Harmonia Sans Pro Condensed Semi Bold*/
 
 
 
@@ -53,6 +56,15 @@
 
 /*-------------------------------*/
 
+/*ACTIVAR EL CATEGORIES CUANDO SE PASA EL CURSOR*/
+
+.nav-item.dropdown:hover .dropdown-menu,
+.nav-item.dropdown:focus .dropdown-menu,
+.nav-item.dropdown.show .dropdown-menu {
+  display: block;
+  margin-top: 0; /* optional: adjust for better positioning */
+}
+
 
 
 
@@ -68,6 +80,7 @@
   text-align: center;
   padding: 3rem 1rem;
   position: relative;
+  
 }
 
 /* COMPONENTE HERO CON ESTILOS E IMPORTACION DEL FONDO CON SU CONTENEDOR */
@@ -83,6 +96,20 @@
   opacity: 1; /* Ajusta la opacidad según sea necesario */
   z-index: 1;
 }
+
+
+/* BOTON DE EL HERO CON ESTILOS */
+a.botonhero {
+  background-color: var(--success);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+a.botonhero:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+/*------------------------------------------------*/
+
 
 .hero-section .container {
   position: relative;
@@ -107,6 +134,9 @@
   .carousel {
       margin: 0 auto;
       max-width: 100%;
+  }
+  .col-md-4 {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -141,9 +171,16 @@
 
 /* TAMAÑO DE EL NAVBAR DEL NAVBAR */
 .nav-link {
-  font-weight: 500;
+  font-weight: 00;
   margin-top: 1rem;
   
 }
 
 
+/* COLOR DE LAS TARJETAS DE HOMETEXT Y OTROS ESTLOS */  
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Otros estilos existentes... */
