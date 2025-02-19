@@ -1,21 +1,15 @@
 import Home from "./Home";
-import shop from "./shop";
-
-import contact from "./contact";
-import admin from "./admin";
-import shopcart from "./shopcart";
-import homewe from "../components/home/Homewe";
-
-
-
+import Contact from "./contact";  // Cambia a mayúscula
+import Admin from "./admin";      // Cambia a mayúscula
+import ShopCart from "./shopcart"; // Cambia a mayúscula
+import Shop from "./shop";        // Cambia a mayúscula
 
 const MasterPage = {
     Home,
-    shop,
-    contact,
-    admin,
-    shopcart,
-    homewe
-    };
+    Contact,   // Actualiza los nombres
+    Admin,
+    ShopCart,
+    Shop
+};
 
 export default MasterPage;

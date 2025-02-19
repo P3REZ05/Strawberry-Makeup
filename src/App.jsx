@@ -10,23 +10,19 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import MasterPage from './pages/MasterPage';
 
 
-
 const App = () => {
     return (
         <div>
             <Header />
             <Routes>
                 <Route path="/" element={<MasterPage.Home/>} />
-                <Route path='/shop' element={<MasterPage.shop/>} />
-                <Route path='/about' element={<MasterPage.about/>} />
-                <Route path='/contact' element={<MasterPage.contact/>} />
-                <Route path='/shopcart' element={<MasterPage.shopcart/>} />
-                <Route path='/admin' element={<MasterPage.admin/>} />
+                <Route path='/shop' element={<MasterPage.Shop/>} />
+                <Route path='/contact' element={<MasterPage.Contact/>} />
+                <Route path='/shopcart' element={<MasterPage.ShopCart/>} />
+                <Route path='/admin' element={<MasterPage.Admin/>} />
             </Routes>
             <Footer />
-            
         </div>
     );
 };
-
 export default App;

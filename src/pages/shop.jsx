@@ -1,8 +1,11 @@
-import React from "react";
+import Productos from "../components/catalogoProductos/productos/Productos";
 
-const shop = () => {
-
-    return <div>Shop</div>;
-
+const Shop = () => {
+    return (
+        <div className="shop">
+            <Productos/>
+        </div>
+    );    
 }
-export default shop;
+
+export default Shop;
