@@ -1,8 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import '../../App.css';
 import logo from '../../assets/logo/strawberrymakeup.png';
 
 const Admin = () => {
+    const navigate = useNavigate();
+    const [credentials, setCredentials] = useState({
+        nombre: '',
+        contraseña: '',
+        rememberMe: false
+    });
+    const [error, setError] = useState('');
+
+    const handleChange = (e) => {
+        const { name, value, type, checked } = e.target;
+        setCredentials(prev => ({
+            ...prev,
+            [name]: type === 'checkbox' ? checked : value
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await axios.post('http://localhost:8000/admin/validate', credentials);
+            
+            if (response.data.valid) {
+                localStorage.setItem('adminToken', response.data.token);
+                navigate('/admin/dashboard');
+            } else {
+                setError('Credenciales inválidas');
+            }
+        } catch (error) {
+            setError('Error al validar credenciales');
+            console.error('Error:', error);
+        }
+    };
+
     return (
         <div className="container d-flex align-items-center justify-content-between vh-100">
             {/* Logo Section */}
@@ -26,12 +61,20 @@ const Admin = () => {
                         </div>
                         <h5 className="mt-3">Iniciar Sesión</h5>
                     </div>
-                    <form>
+                    {error && (
+                        <div className="alert alert-danger" role="alert">
+                            {error}
+                        </div>
+                    )}
+                    <form onSubmit={handleSubmit}>
                         <div className="form-group mb-3">
                             <input 
                                 type="text" 
                                 className="form-control" 
                                 placeholder="Usuario" 
+                                name="nombre"
+                                value={credentials.nombre}
+                                onChange={handleChange}
                                 required 
                             />
                         </div>
@@ -40,6 +83,9 @@ const Admin = () => {
                                 type="password" 
                                 className="form-control" 
                                 placeholder="Contraseña" 
+                                name="contraseña"
+                                value={credentials.contraseña}
+                                onChange={handleChange}
                                 required 
                             />
                         </div>
@@ -49,6 +95,9 @@ const Admin = () => {
                                     type="checkbox" 
                                     className="form-check-input" 
                                     id="rememberMe"
+                                    name="rememberMe"
+                                    checked={credentials.rememberMe}
+                                    onChange={handleChange}
                                 />
                                 <label className="form-check-label" htmlFor="rememberMe">
                                     Recordarme
