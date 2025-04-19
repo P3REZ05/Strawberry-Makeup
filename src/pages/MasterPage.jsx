@@ -4,6 +4,7 @@ import admin from "./admin";      // Cambia a mayúscula
 import ShopCart from "./shopcart"; // Cambia a mayúscula
 import Shop from "./shop";        // Cambia a mayúscula
 import dashboard from "./dashboard";
+import ProductPage from "./product";
 
 const MasterPage = {
     Home,
@@ -11,7 +12,8 @@ const MasterPage = {
     admin,
     dashboard,
     ShopCart,
-    Shop
+    Shop,
+    ProductPage,
 };
 
 export default MasterPage;

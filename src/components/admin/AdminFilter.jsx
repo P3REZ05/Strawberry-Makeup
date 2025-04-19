@@ -84,12 +84,12 @@ const AdminFilter = ({ onFilter }) => {
                     />
                 </div>
                 <div className="col-md-2 d-flex gap-2">
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn " style={{backgroundColor: 'var(--primary)', color: 'white'}}>
                         Filtrar
                     </button>
                     <button 
                         type="button" 
-                        className="btn btn-secondary"
+                        className="btn " style={{backgroundColor: 'var(--ligth)', color: 'white'}}
                         onClick={handleReset}
                     >
                         Limpiar

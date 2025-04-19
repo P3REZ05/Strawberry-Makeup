@@ -53,7 +53,7 @@ const AdminAddFilter = ({ BACKEND_URL, onSave }) => {
     return (
         <>
             <button 
-                className="btn btn-success me-2"
+                className="btn me-2" style={{backgroundColor: 'var(--primary)', color: 'white'}}
                 onClick={() => setShowAddModal(true)}
             >
                 <i className="bi bi-plus-circle"></i> Añadir

@@ -7,8 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '@fortawesome/fontawesome-free/css/all.css';
-import AdminOrders from './components/admin/AdminOrders';
-import Administradores from './components/admin/Administradores';
 import MasterPage from './pages/MasterPage';
 
 
@@ -19,6 +17,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<MasterPage.Home/>} />
                 <Route path='/shop' element={<MasterPage.Shop/>} />
+                <Route path='/product/:id' element={<MasterPage.ProductPage/>} />
                 <Route path='/contact' element={<MasterPage.Contact/>} />
                 <Route path='/shopcart' element={<MasterPage.ShopCart/>} />
                 <Route path='/admin' element={<MasterPage.admin/>} />
